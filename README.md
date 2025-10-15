@@ -1,14 +1,20 @@
-# Assignment 2: Image Classification with Deep Learning
+# Deep Learning for Image Classification
 
-This repository contains the source code, notebooks, and reports for an image classification project. The primary goal is to build and evaluate a model capable of classifying images, likely using a dataset such as CIFAR-10, and testing it against other images.
+This repository contains the source code and report for a project focused on building and evaluating a Convolutional Neural Network (CNN) for image classification. The model is trained on the CIFAR-10 dataset and then tested against custom images to evaluate its generalization performance.
 
-## 📝 Description
+## 📝 Project Overview
 
-This project explores the fundamentals of building a deep learning model for image classification. The core tasks are implemented in Jupyter Notebooks and include data loading, preprocessing, model architecture definition, training, and evaluation. A detailed analysis and summary of the results are available in the PDF report.
+This project provides an end-to-end demonstration of a deep learning workflow for image classification. The key stages are implemented in Jupyter Notebooks and include:
 
-## 📂 Project Structure
+  * **Data Loading & Preprocessing:** Loading the CIFAR-10 dataset, normalizing pixel values, and preparing it for training.
+  * **Model Architecture:** Designing and building a Convolutional Neural Network (CNN) using TensorFlow/PyTorch.
+  * **Training & Validation:** Training the model on the training set while monitoring its performance on a validation set.
+  * **Evaluation:** Assessing the final model's accuracy and performance on the unseen test set.
+  * **Inference:** Using the trained model to make predictions on new, custom images not from the original dataset.
 
-Here is an overview of the files and directories within this repository:
+A detailed analysis of the methodology and results is available in the final report.
+
+## 📂 Repository Structure
 
 ```
 .
@@ -18,33 +24,32 @@ Here is an overview of the files and directories within this repository:
 ├── SourceCode/
 │   ├── Non-CIFAR_images/
 │   ├── Assignment_2.ipynb
-│   ├── run_model.ipynb
 │   └── README.md
 └── README.md
 ```
 
-* **`Report/`**: Contains the final reports for the assignment.
-    * `PythonReport.pdf`: The main report detailing the methodology, results, and conclusions.
-    * `LaTeX Report/`: Source files for the report.
-* **`SourceCode/`**: Contains all the code and related assets.
-    * `Non-CIFAR_images/`: A directory containing images not from the primary training dataset, used for testing the model's generalization.
-    * `Assignment_2.ipynb`: The main Jupyter Notebook containing the complete workflow: data exploration, model building, training, and evaluation.
-    * `run_model.ipynb`: A notebook likely used for loading a pre-trained model and running predictions on new images.
+  * **`Report/`**: Contains the final PDF report and its LaTeX source files.
+      * `PythonReport.pdf`: A comprehensive document detailing the project's methodology, architecture, results, and conclusions.
+  * **`SourceCode/`**: Contains all Python code and related assets.
+      * `Non-CIFAR_images/`: Custom images used to test the model's generalization capabilities.
+      * `Assignment_2.ipynb`: The main Jupyter Notebook detailing the complete end-to-end process: data exploration, model building, training, and evaluation.
 
 ## 🚀 Getting Started
 
-To run this project on your local machine, please follow the steps below.
+To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
-You will need Python 3 and a standard environment for data science. The key libraries are:
-* [Jupyter Notebook](https://jupyter.org/install) or [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
-* [TensorFlow](https://www.tensorflow.org/install) or [PyTorch](https://pytorch.org/get-started/locally/)
-* NumPy
-* Matplotlib
-* Scikit-learn
+You will need Python 3 and a standard data science environment. The key libraries are:
 
-You can install these dependencies using pip:
+  * Jupyter Notebook / JupyterLab
+  * TensorFlow or PyTorch
+  * NumPy
+  * Matplotlib
+  * Scikit-learn
+
+You can install all dependencies using pip:
+
 ```sh
 pip install jupyterlab numpy matplotlib scikit-learn tensorflow
 ```
@@ -53,25 +58,25 @@ pip install jupyterlab numpy matplotlib scikit-learn tensorflow
 
 1.  **Clone the repository:**
     ```sh
-    git clone <your-repository-url>
+    git clone https://github.com/KhangDaoz/Assignment-2.git
     ```
 2.  **Navigate to the project directory:**
     ```sh
-    cd <your-repository-name>
+    cd Assignment-2
     ```
 
 ## Usage
 
-The primary workflow is contained within the Jupyter Notebooks in the `SourceCode/` directory.
+The main logic is contained within the Jupyter Notebooks.
 
-1.  **Start Jupyter:**
+1.  **Launch Jupyter Lab:**
     ```sh
     jupyter lab
     ```
-2.  **Open and run the notebooks:**
-    * Navigate to `SourceCode/` in the Jupyter interface.
-    * Open `Assignment_2.ipynb` to see the full model development process.
-    * Open `run_model.ipynb` to test the final trained model.
+2.  **Run the Notebooks:**
+      * Navigate to the `SourceCode/` directory.
+      * Open **`Assignment_2.ipynb`** to review the complete model development lifecycle from scratch.
 
-## Report
-For a comprehensive understanding of the project, including the theoretical background, implementation details, and analysis of the results, please refer to the report located at: `Report/PythonReport.pdf`.
+## 📈 Results
+
+The final model achieves an accuracy of **80%** on the CIFAR-10 test set. For a detailed breakdown of performance, including the confusion matrix, classification report, and an analysis of how the model performed on the custom `Non-CIFAR_images`, please see the full report in `Report/PythonReport.pdf`.
