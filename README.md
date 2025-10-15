@@ -74,5 +74,4 @@ The primary workflow is contained within the Jupyter Notebooks in the `SourceCod
     * Open `run_model.ipynb` to test the final trained model.
 
 ## Report
-
 For a comprehensive understanding of the project, including the theoretical background, implementation details, and analysis of the results, please refer to the report located at: `Report/PythonReport.pdf`.
