@@ -24,6 +24,7 @@ A detailed analysis of the methodology and results is available in the final rep
 ├── SourceCode/
 │   ├── Non-CIFAR_images/
 │   ├── Assignment_2.ipynb
+│   ├── Test_Model.ipynb
 │   └── README.md
 └── README.md
 ```
@@ -33,6 +34,7 @@ A detailed analysis of the methodology and results is available in the final rep
   * **`SourceCode/`**: Contains all Python code and related assets.
       * `Non-CIFAR_images/`: Custom images used to test the model's generalization capabilities.
       * `Assignment_2.ipynb`: The main Jupyter Notebook detailing the complete end-to-end process: data exploration, model building, training, and evaluation.
+      * `Test_Model.ipynb`: A streamlined notebook for loading the pre-trained model and running predictions on new images.
 
 ## 🚀 Getting Started
 
